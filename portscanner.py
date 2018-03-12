@@ -1,9 +1,8 @@
 import socket,sys,time,datetime,argparse,os
-from sys import argv
 
 os.system('clear')
  
-xyz,host = argv
+xyz,host = sys.argv
 ip = socket.gethostbyname(host)
 print(ip)
 
