@@ -1,7 +1,15 @@
 import socket,sys,time,datetime,argparse,os
 
 os.system('clear')
- 
+if len(sys.argv)<2:
+	print("One argument expected\nUse -h for help")
+	sys.exit(1)
+
+if sys.argv[1]=="-h":
+	desc = "Usage:\n     	python portscanner.py [websitename]"
+	print(desc)
+	sys.exit(1)
+	
 host = sys.argv[1]
 ip = socket.gethostbyname(host)
 print(ip)
