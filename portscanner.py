@@ -2,7 +2,7 @@ import socket,sys,time,datetime,argparse,os
 
 os.system('clear')
  
-xyz,host = sys.argv
+host = sys.argv[1]
 ip = socket.gethostbyname(host)
 print(ip)
 
